@@ -26,6 +26,7 @@ fn main() {
 }
 
 fn input_functions() {
+    // Getting user inputs with rust
     let mut input = String::new();
     println!("What do you think?");
     io::stdin().read_line(&mut input).expect("Failed to read");
@@ -48,10 +49,14 @@ fn arithmetic_functions() {
     let z: f32 = x / y;
     let a: f32 = x % y;
     let b: f32 = x * y;
-    let mut c = 34 as i16;
-    c = 256;
+    let  c = 34 as i16;
+    let d:i32 = 255;
+    let e = d * (c as i32);
+    let max_int = i16::MAX;
+    let min_float = f32::MIN;
 
-    println!("Division result: {z}");
-    println!("Modulus result: {a}");
-    println!("Multiplication result: {b}");
+    println!(" x / y: {z}");
+    println!("x % y: {a}");
+    println!("x * y: {b}");
+    println!("d * (c as i32): {e}");
 }
